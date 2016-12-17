@@ -3,6 +3,7 @@ var h5canvas;
 
 function setup() {
 	noCanvas();
+	//frameRate(2);
 	h5canvas = document.getElementById("h5canvas");
 	h5canvas.width = window.innerWidth;
 	h5canvas.height = window.innerHeight;	
@@ -19,6 +20,7 @@ function draw() {
 
 function mousePressed(){
 	createFireworks(mouseX, mouseY);	
-	console.log("mouseX = "+mouseX+", mouseY = "+mouseY);
+	//console.log("mouseX = "+mouseX+", mouseY = "+mouseY);
+	//console.log("fireworks.length = "+fireworks.length);
 }
 
