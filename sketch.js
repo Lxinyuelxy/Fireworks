@@ -20,11 +20,6 @@ function draw() {
 
 
 function mousePressed(){
-	if(Math.random() > 0.5){
-		createFireworks(mouseX, mouseY);	
-	}
-	else{
-		createFireworks2(mouseX, mouseY);
-	}	
+	createFireworks2(mouseX, mouseY);
 }
 

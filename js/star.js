@@ -34,7 +34,7 @@ ShootingStar.prototype.rst=function(){
 	this.y=0;
 	this.len=random(10,90);
 	this.speed=random(6,16);
-	this.size=random(0.8, 2.0);
+	this.size=random(0.8, 1.5);
 	this.waitTime=new Date().getTime()+random(500,3500);
 	this.active=false;
 }
