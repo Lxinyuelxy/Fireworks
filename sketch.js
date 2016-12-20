@@ -2,8 +2,9 @@ var h5canvas;
 
 var ctx;
 function setup() {
+	//createCanvas(windowWidth, windowHeight);
 	noCanvas();
-	//frameRate(2);
+	//frameRate(10);
 	h5canvas = document.getElementById("h5canvas");
 	h5canvas.width = window.innerWidth;
 	h5canvas.height = window.innerHeight;
@@ -13,6 +14,7 @@ function setup() {
 }
 
 function draw() {
+	clear();
 	updateFireworks(ctx);
 	updateMeteor(ctx);
 	createHill(ctx);	
@@ -20,6 +22,14 @@ function draw() {
 
 
 function mousePressed(){
-	createFireworks2(mouseX, mouseY);
+	var temp = Math.random();
+	if(temp < 0.3){
+		createFireworks(mouseX, mouseY);
+	}else if(temp < 0.6){
+		createFireworks3(mouseX, mouseY);
+	}else{
+		createFireworks2(mouseX, mouseY);
+	}
+	
 }
 
